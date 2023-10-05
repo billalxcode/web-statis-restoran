@@ -1,0 +1,250 @@
+:root {
+    --rich-black-fogra-29: hsl(210, 26%, 7%);
+    --champagne-pink_20: hsla(23, 61%, 86%, 0.2);
+    --independence_30: hsla(245, 17%, 29%, 0.3);
+    --gray-x-11-gray: hsl(0, 0%, 73%);
+    --champagne-pink: hsl(23, 61%, 86%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --deep-saffron: hsl(32, 100%, 59%);
+    --dark-orange: hsl(28, 100%, 58%);
+    --desert-sand: hsl(23, 49%, 82%);
+    --isabelline: hsl(38, 44%, 96%);
+    --gainsboro: hsl(0, 0%, 87%);
+    --tangerine: hsl(31, 84%, 50%);
+    --cinnabar: hsl(3, 90%, 55%);
+    --black_95: hsla(0, 0%, 0%, 0.95);
+    --black_60: hsla(0, 0%, 0%, 0.60);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(0, 0%, 27%);
+
+    --font-poppins: "Poppins", sans-serif;
+    --font-rubik: "Rubik", sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-poppins);
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* Basic Styling */
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-rubik);
+    color: var(--black_95);
+}
+
+p {
+    color: var(--black_60);
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    margin-bottom: 10rem;
+
+    background-color: var(--champagne-pink_20);
+}
+
+/* Navbar Section Start */
+.navbar {
+    min-width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, .6);
+}
+
+.navbar-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.navbar-list li {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    cursor: pointer;
+    padding: .5rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn-cto {
+    background-color: var(--dark-orange);
+    color: white;
+}
+
+.btn-cto:hover {
+    background-color: var(--tangerine);
+}
+
+/* Navbar Section End */
+
+/* Hero Section Start */
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-block: 145px 60px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.hero img {
+    width: 700px;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    margin-left: 10rem;
+}
+
+.hero .content h1 {
+    color: var(--champagne-pink);
+    margin-inline: auto;
+    max-width: 15ch;
+    font-size: 4rem;
+
+    margin-top: 6rem;
+}
+
+.hero .content p {
+    color: var(--champagne-pink);
+    font-style: italic;
+    text-align: justify;
+    max-width: 60ch;
+    font-size: 1rem;
+}
+
+.hero .content .btn {
+    cursor: pointer;
+    padding: .5rem;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--dark-orange);
+    color: var(--white);
+    font-size: 1.3rem;
+    width: 20rem;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+/* Hero Section End */
+
+/*  Promo Section Start */
+
+.promo {
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: calc(25% - 7.5px);
+    max-width: 70%;
+}
+
+.promo-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-item {
+    margin: 5px;
+    min-width: calc(25% - 7.5px);
+}
+
+.promo-card {
+    position: relative;
+    background-color: var(--white);
+    text-align: center;
+    padding: 40px 30px;
+    box-shadow: 0 1px 3px rgba(1, 1, 1, .2);
+    z-index: 1;
+}
+
+.promo-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--deep-saffron);
+    clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);
+    transform: scaleY(.3);
+    transform-origin: bottom;
+    z-index: -1;
+    transition: 0.25s ease;
+}
+
+.promo-card:hover::after {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    transform: scaleY(1);
+}
+
+.promo-card:hover :is(.promo-card-title, .promo-card-text) {
+    color: var(--white);
+}
+
+.promo-card:hover :is(.promo-card-price) {
+    color: var(--black_60);
+}
+.promo-card-title {
+    font-family: var(--font-rubik);
+    font-weight: 900;
+    margin-block: 15px;
+}
+
+.promo-card-text {
+    font-family: var(--font-rubik);
+    text-align: justify;
+}
+
+.promo-card-image {
+    width: 200px;
+}
+
+.promo-card-cta {
+    cursor: pointer;
+    border: none;
+    background-color: var(--white);
+    color: var(--black_95);
+    padding: 5px 10px;
+    transition: .2s ease;
+}
+
+.promo-card-cta:hover {
+    background-color: var(--cultured);
+}
+
+.promo-card-price {
+    color: var(--dark-orange);
+}
+
+/* Promo Section End */
