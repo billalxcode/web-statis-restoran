@@ -1,0 +1,118 @@
+:root {
+    --rich-black-fogra-29: hsl(210, 26%, 7%);
+    --champagne-pink_20: hsla(23, 61%, 86%, 0.2);
+    --independence_30: hsla(245, 17%, 29%, 0.3);
+    --gray-x-11-gray: hsl(0, 0%, 73%);
+    --champagne-pink: hsl(23, 61%, 86%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --deep-saffron: hsl(32, 100%, 59%);
+    --dark-orange: hsl(28, 100%, 58%);
+    --desert-sand: hsl(23, 49%, 82%);
+    --isabelline: hsl(38, 44%, 96%);
+    --gainsboro: hsl(0, 0%, 87%);
+    --tangerine: hsl(31, 84%, 50%);
+    --cinnabar: hsl(3, 90%, 55%);
+    --black_95: hsla(0, 0%, 0%, 0.95);
+    --black_60: hsla(0, 0%, 0%, 0.60);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(0, 0%, 27%);
+
+    --font-poppins: "Poppins", sans-serif;
+    --font-rubik: "Rubik", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-poppins);
+}
+
+body {
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.card {
+    min-width: 500px;
+    /* background-color: var(--champagne-pink_20); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.card-header {
+    text-align: center;
+    padding: 30px;
+}
+
+.card-header h4 {
+    font-size: 2rem;
+}
+
+.card-body {}
+
+.card-body p {
+    margin-top: 30px;
+    text-align: center;
+}
+form .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input:active {
+    outline: none !important;
+    border-color: var(--deep-saffron);
+    box-shadow: 0 0 5px var(--deep-saffron);
+}
+
+input:focus {
+    outline: none !important;
+    border-color: var(--deep-saffron);
+    box-shadow: 0 0 5px var(--deep-saffron);
+}
+
+.btn {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-saffron {
+    background-color: var(--deep-saffron);
+}
+
+.alert {
+    min-width: 100%;
+}
+
+.alert-success {
+    background-color: #00a52a;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
