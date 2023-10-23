@@ -1,0 +1,41 @@
+.menu-container {
+    margin: 20px;
+}
+
+.menu-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.menu-image {
+    width: 300px;
+}
+
+.menu-title {
+    text-align: center;
+}
+
+.menu-price {
+    text-align: center;
+    color: var(--deep-saffron);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.btn-primary {
+    background-color: var(--deep-saffron);
+    color: white;
+    border-radius: 5px;
+}
