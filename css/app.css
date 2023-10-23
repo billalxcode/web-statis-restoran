@@ -46,7 +46,6 @@ p {
 body {
     min-height: 100vh;
     min-width: 100%;
-    margin-bottom: 10rem;
 
     background-color: var(--champagne-pink_20);
 }
@@ -259,3 +258,19 @@ body {
 }
 
 /* Promo Section End */
+
+/* Start footer */
+.footer {
+    position: relative;
+    clear: both;
+    bottom: 0;
+    background-color: var(--black_95);
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: var(--cultured);
+}
+/* End footer */
