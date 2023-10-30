@@ -1,6 +1,38 @@
 .content {
     display: flex;
     margin: 2rem;
+    flex-direction: column;
+}
+
+.form-search {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.input-search {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--champagne-pink_20);
+    border: 1px solid var(--black_60);
+
+    background-image: url('/lib/fontawesome-free-6.2.1-web/svgs/solid/cart-shopping.svg');
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    background-size: 20px;
+    padding-left: 40px;
+}
+
+.input-search:focus {
+    outline: none;
+    border: 1px solid var(--black_95);
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
 }
 
 .menu-card {
@@ -20,8 +52,9 @@
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 0px;
     
+    cursor: pointer;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -38,6 +71,11 @@
 .menu-price {
     color: var(--deep-saffron);
     margin: 15px;
+}
+
+.menu-price-discount {
+    text-decoration: line-through;
+    color: var(--black_60);
 }
 
 .btn-group {
