@@ -1,46 +1,52 @@
-.menu-container {
-    margin: 20px;
-}
-
-.menu-row {
+.content {
     display: flex;
-    flex-direction: row;
-    gap: 2px;
-    flex-wrap: wrap;
+    margin: 2rem;
 }
 
 .menu-card {
-    background-color: white;
+    margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 20px;
+    border-radius: 10px;
+    padding-bottom: 15px;
 }
 
-.menu-image {
-    width: 300px;
+.menu-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-title {
-    text-align: center;
+    margin: 10px;
+    width: 190px;
+    word-wrap: break-word;
+    font-family: var(--font-poppins);
+    font-weight: 500;
 }
 
 .menu-price {
-    text-align: center;
     color: var(--deep-saffron);
+    margin: 15px;
 }
 
 .btn-group {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    /* position: absolute;
+    bottom: 10px; */
 }
 
-a.btn {
-    text-decoration: none;
-    font-size: .8rem;
-}
-
-.btn-primary {
-    background-color: var(--deep-saffron);
+.btn {
+    padding: .5rem;
     color: white;
-    border-radius: 5px;
+    background-color: var(--deep-saffron);
+}
+
+.btn-buy {
+    width: 145px;
 }
