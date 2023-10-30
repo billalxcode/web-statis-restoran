@@ -33,10 +33,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 100%;
+    width: 65%;
+    justify-content: center;
 }
 
 .menu-card {
     margin: 10px;
+    margin-bottom: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding-bottom: 15px;
@@ -44,7 +47,15 @@
     transition: all .2s ease;
 }
 
-.menu-card:hover {
+.is-promo {
+    scale: 1.1;
+}
+
+.is-promo:hover {
+    transform: scale(1);
+}
+
+.menu-card:not(.is-promo):hover {
     scale: 1.1;
 }
 
@@ -58,6 +69,19 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.menu-badge {
+    position: absolute;
+    /* right: 10px;
+    top: 5px; */
+    right: 0;
+    top: 0;
+    background-color: var(--deep-saffron);
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
 }
 
 .menu-title {
