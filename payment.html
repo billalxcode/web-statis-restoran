@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dapur Aghny</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/payment.css" />
+    <link
+      rel="stylesheet"
+      href="./lib/fontawesome-free-6.2.1-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h2 class="navbar-title">DapurAghny</h2>
+
+      <ul class="navbar-list">
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="/about.html">Tentang Kami</a>
+        </li>
+        <li>
+          <a href="/auth/signin.html" class="btn btn-cto">Signin</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+        <h1>Selesaikan Pembayaran</h1>
+        <div class="content-wrapper">
+            <h3>Lengkapi Informasi kamu</h3>
+            <form action="">
+                <input type="text" placeholder="Masukan Nama Kamu">
+                <input type="text" placeholder="Nomor Telepon">
+                
+                <div class="input-group">
+                    <input type="text" placeholder="Gunakan kode voucher">
+                    <button class="btn btn-primary" type="button">Gunakan</button>
+                </div>
+            </form>
+
+            <div class="payment-method">
+                <h3>Pilih Metode Pembayaran</h3>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" name="payment" class="payment-radio" id="">
+                            </td>
+                            <td>DANA</td>
+                            <td>
+                                <img src="/images/payment/dana.png" alt="" class="payment-img">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input type="radio" name="payment" class="payment-radio" id="">
+                            </td>
+                            <td>GOPAY</td>
+                            <td>
+                                <img src="/images/payment/gopay.jpg" alt="" class="payment-img">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="payment" class="payment-radio" id="">
+                            </td>
+                            <td>SHOPEE PAY</td>
+                            <td>
+                                <img src="/images/payment/shopee.webp" alt="" class="payment-img">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="payment" class="payment-radio" id="">
+                            </td>
+                            <td>QRIS</td>
+                            <td>
+                                <img src="/images/payment/qris.png" alt="" class="payment-img">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button class="btn btn-pay">Bayar Sekarang</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+      <p class="footer-copyright">Copyright &copy; 2023 Billal Fauzan.</p>
+    </footer>
+
+    <script src="./lib/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+  </body>
+</html>

@@ -112,3 +112,14 @@ th {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+
+.cart-menu-price {
+  color: var(--deep-saffron);
+  margin: 15px;
+}
+
+.cart-menu-price-discount {
+  text-decoration: line-through;
+  color: var(--black_60);
+}
