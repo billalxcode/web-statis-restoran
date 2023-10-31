@@ -1,62 +1,114 @@
-.container {
-  margin: 20px;
+.content {
+  margin: 2rem;
 }
 
-.row {
+.content h1 {
+  text-align: center;
+  padding: 50px;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.table thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+th {
+  display: table-cell;
+  text-align: start;
+}
+
+.table thead th {
+  border-bottom-width: 2px;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.menu-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.card {
-  background-color: var(--white);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* width: px; */
+.menu-wrapper .menu-img {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  border-radius: 20px;
 }
 
-.card-header {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  padding: 10px;
+.menu-wrapper p {
+  font-weight: bold;
+  width: 200px;
+  word-wrap: break-word;
+}
+
+.qty-wrapper button {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.qty-wrapper input {
+  width: 3rem;
+  height: 2.5rem;
   text-align: center;
 }
-
-.card-body {
-  padding: 10px;
+.btn {
+  padding: .5rem;
+  color: white;
+  background-color: var(--deep-saffron);
 }
 
-.voucher {
+.btn-trash {
+  background-color: var(--cinnabar);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.cart-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* justify-content: center; */
+}
+
+.cart-info-card {
+  background-color: inherit;
+  padding: 15px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  margin-bottom: 25px;
+}
+
+.cart-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 10px;
 }
 
-.voucher-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+.cart-info .text-key {
+  font-weight: bold;
+  padding: 5px;
+  margin-right: 40px;
+  padding-right: 20px;
 }
 
-.voucher-input:active {
-  outline: none !important;
-  border-color: var(--deep-saffron);
-  box-shadow: 0 0 5px var(--deep-saffron);
-}
-
-.voucher-input:focus {
-  outline: none !important;
-  border-color: var(--deep-saffron);
-  box-shadow: 0 0 5px var(--deep-saffron);
-}
-
-.btn-voucher {
-  height: 3rem;
-  background-color: var(--champagne-pink_20);
-  border: 1px solid var(--deep-saffron);
-  box-shadow: 1px 1px 8px 5px rgba(255, 157, 46, 0.36);
-  -webkit-box-shadow: 1px 1px 8px 5px rgba(255, 157, 46, 0.36);
-  -moz-box-shadow: 1px 1px 8px 5px rgba(255, 157, 46, 0.36);
+.cart-info-wrapper button {
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
 }

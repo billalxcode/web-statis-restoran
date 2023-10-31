@@ -12,7 +12,11 @@
     />
 
     <link rel="stylesheet" href="./css/app.css" />
-    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="./lib/fontawesome-free-6.2.1-web/css/all.min.css"
+    />
   </head>
   <body>
     <div class="navbar">
@@ -34,39 +38,72 @@
       </ul>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="cart-list">
-                <table class="cart-table">
-                    <thead>
-                        <tr>
-                            <th>Produk</th>
-                            <th>Jumlah</th>
-                            <th>Harga</th>
-                            <th>Total</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
+    <div class="content">
+      <h1>Ayo buruan checkout!</h1>
+      <table class="table table-menu-list">
+        <thead>
+          <tr>
+            <th>Nama Produk</th>
+            <th>Jumlah</th>
+            <th>Sub Harga</th>
+            <th>Total Harga</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="menu-wrapper">
+                <img src="/images/menu/bakso-udang.webp" alt="" class="menu-img">
+                <p>Bakso Udang Pedas ala Si Gemoy</p>
+              </div>
+            </td>
+            <td>
+              <div class="qty-wrapper">
+                <button class="btn btn-qty-minus" id="btn-minus"><i class="fa fa-minus"></i></button>
+                <input type="text" name="" id="" value="1" placeholder="Jumlah">
+                <button class="btn btn-qty-plus" id="btn-plus"><i class="fa fa-plus"></i></button>
+              </div>
+            </td>
+            <td data-harga="25000">Rp. 25.000</td>
+            <td>Rp. 25.000</td>
+            <td>
+              <button class="btn btn-trash"><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-            <div class="cart-detail">
-                <div class="card">
-                    <div class="card-header">
-                        <h5>Pembayaran</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="voucher">
-                            <input type="text" name="voucher" id="voucher" class="voucher-input">
-                            <button class="btn btn-voucher">Apply</button>
-                        </div>
-                    </div>
-                </div>
+      <div class="cart-info-group">
+        <div class="cart-info-wrapper">
+          <div class="cart-info-card">
+            <div class="cart-info">
+              <p class="text-key">Diskon</p>
+              <p class="text-value">Rp. 0</p>
             </div>
+            
+            <div class="cart-info">
+              <p class="text-key">Total Pajak</p>
+              <p class="text-value">Rp. 0</p>
+            </div>
+            
+            <div class="cart-info">
+              <p class="text-key">Sub total</p>
+              <p class="text-value">Rp. 0</p>
+            </div>
+          </div>
+
+          <a href="/">
+            <button class="btn btn-primary">Lanjut Pembayaran</button>
+          </a>
         </div>
+        
+      </div>
     </div>
-
     <footer class="footer">
-        <p class="footer-copyright">Copyright &copy; 2023 Billal Fauzan.</p>
-      </footer>
+      <p class="footer-copyright">Copyright &copy; 2023 Billal Fauzan.</p>
+    </footer>
+
+    <script src="./lib/fontawesome-free-6.2.1-web/js/all.min.js"></script>
   </body>
 </html>
